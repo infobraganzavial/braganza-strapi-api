@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_bars",
+  "info": {
+    "singularName": "contact-bar",
+    "pluralName": "contact-bars",
+    "displayName": "ContactBar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "iconEmail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "iconPhone": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "iconWhatsapp": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "whatsapp": {
+      "type": "string",
+      "required": true
+    },
+    "whatsappMessage": {
+      "type": "string"
+    }
+  }
+}
