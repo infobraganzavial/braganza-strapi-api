@@ -34,8 +34,8 @@ export default ({ env }) => ({
         apiKey: env("SENDGRID_API_KEY"),
       },
       settings: {
-        defaultFrom: process.env.SENDGRID_FROM,
-        defaultReplyTo: process.env.CONTACT_INBOX,
+        defaultFrom: env("SENDGRID_FROM"),
+        defaultReplyTo: env("CONTACT_INBOX"),
       },
     },
   },

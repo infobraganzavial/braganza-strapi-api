@@ -15,7 +15,14 @@ export default [
       },
     },
   },
-  "strapi::cors",
+  {
+    name: "strapi::cors",
+    config: {
+      origin: ["https://braganza-web.vercel.app", "http://localhost:3000"],
+      headers: ["*"],
+      credentials: true,
+    },
+  },
   "strapi::poweredBy",
   "strapi::query",
   "strapi::body",
