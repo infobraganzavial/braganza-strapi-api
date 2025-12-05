@@ -1,7 +1,12 @@
-/**
- * client router
- */
-
-import { factories } from '@strapi/strapi';
-
-export default factories.createCoreRouter('api::client.client');
+export default {
+  routes: [
+    {
+      method: "GET",
+      path: "/clients",
+      handler: "client.findAll",
+      config: {
+        auth: false,
+      },
+    },
+  ],
+};

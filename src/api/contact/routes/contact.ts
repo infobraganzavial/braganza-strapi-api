@@ -1,12 +1,7 @@
-export default {
-  routes: [
-    {
-      method: "POST",
-      path: "/contact",
-      handler: "contact.sendEmail",
-      config: {
-        auth: false,
-      },
-    },
-  ],
-};
+/**
+ * contact router
+ */
+
+import { factories } from "@strapi/strapi";
+
+export default factories.createCoreRouter("api::contact.contact");

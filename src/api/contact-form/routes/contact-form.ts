@@ -1,7 +1,12 @@
-/**
- * contact-form router
- */
-
-import { factories } from '@strapi/strapi';
-
-export default factories.createCoreRouter('api::contact-form.contact-form');
+export default {
+  routes: [
+    {
+      method: "POST",
+      path: "/contact-form",
+      handler: "contact-form.sendEmail",
+      config: {
+        auth: false,
+      },
+    },
+  ],
+};
